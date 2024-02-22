@@ -39,7 +39,7 @@ public class Server extends UnicastRemoteObject implements Interface{
         try {
             Server server = new Server();
             System.out.println("Server is running...");
-            Naming.rebind("rmi://10.0.84.186:11099/RMIInterface", new Server());
+            Naming.rebind("rmi://127.0.0.1:11099/RMIInterface", new Server());
         } catch (Exception e) {
             System.out.println("Trouble: " + e);
         }
